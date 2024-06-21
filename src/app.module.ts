@@ -14,8 +14,8 @@ import { TrimStringsMiddleware } from './middleware/trim-strings.middleware';
 
 @Module({
   imports: [
-    SnapSystemModule,
     ConfigAppModule,
+    SnapSystemModule,
     DatabaseModule,
     CommonModule,
     AppModulesModule,

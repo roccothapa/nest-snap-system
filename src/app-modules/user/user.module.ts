@@ -4,10 +4,11 @@ import { UserController } from './user.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserRepository } from './repositories/user.repository';
 import { User } from '@models/user/user.entity';
+import { MailService } from '@snapSystem/mails/services/mail.service';
 
 @Module({
   imports: [TypeOrmModule.forFeature([User])],
-  providers: [UserService, UserRepository],
+  providers: [UserService, UserRepository,MailService],
   controllers: [UserController],
   exports: [UserService],
 })

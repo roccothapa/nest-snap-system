@@ -8,3 +8,4 @@ export declare type AppConfigOption = {
 
   debug?: boolean;
 };
+

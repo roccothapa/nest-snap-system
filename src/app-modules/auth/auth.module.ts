@@ -33,14 +33,14 @@ import { UserService } from '@appModules/auth/service/user.service';
     AuthService,
     UserService,
     UserRepository,
-    {
-      provide: APP_GUARD,
-      useClass: AuthGuard,
-    },
-    {
-      provide: APP_GUARD,
-      useClass: RolesGuard,
-    },
+    // {
+    //   provide: APP_GUARD,
+    //   useClass: AuthGuard,
+    // },
+    // {
+    //   provide: APP_GUARD,
+    //   useClass: RolesGuard,
+    // },
   ],
   controllers: [AuthController],
   exports: [AuthService],

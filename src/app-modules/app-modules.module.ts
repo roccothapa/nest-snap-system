@@ -3,8 +3,10 @@ import { AuthModule } from '@appModules/auth/auth.module';
 import { UserModule } from '@appModules/user/user.module';
 import { ConfigModule } from '@nestjs/config';
 import { UploaderModule } from './uploader/uploader.module';
+import { MailModule } from '@snapSystem/mails/mail.module';
 
 @Module({
   imports: [ConfigModule, AuthModule, UserModule, UploaderModule],
 })
-export class AppModulesModule {}
+export class AppModulesModule {
+}
